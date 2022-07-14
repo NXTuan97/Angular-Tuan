@@ -1,0 +1,24 @@
+<h1>Day la lop {{file.className}}</h1>
+<button type="button" (click)="changeName()">changeName</button>
+<h2>Trang thai cua lop:
+  <span *ngIf="file.classStatus">Hoat dong</span>
+  <span *ngIf="!file.classStatus">Vo hieu</span>
+</h2>
+<button type="button" (click)="changClassStatus()">Chuyen trang thai</button>
+
+<h2>Danh sách giáo viên</h2>
+<ol>
+  <li *ngFor="let t of teacherName;let i=index;">{{teacherName[i]}}</li>
+</ol>
+<h2>Danh sách môn học</h2>
+<ol>
+  <li *ngFor="let y of subjectNames;">{{y}}</li>
+</ol>
+
+<!--<app-student *ngFor="let st of studentNames;let i=index"-->
+<!--             [studentName]="st" [studentAge]="studentAge[i]"></app-student>-->
+
+<app-student *ngFor="let sv of studentArray" [data]="sv" >
+
+</app-student>
+
