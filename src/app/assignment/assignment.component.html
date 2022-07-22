@@ -1,0 +1,43 @@
+<!--<section>-->
+<!--  <div class="container">-->
+<!--    <div class="search-form-container">-->
+<!--      <div class="search-form">-->
+<!--        <input type="text" [(ngModel)]="cityCode" placeholder="Enter city's name..."/>-->
+<!--        <button type="button" (click)="changeCity();"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/500px-Search_Icon.svg.png"/></button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="weather-card-container" *ngIf="data">-->
+<!--      <div class="weather-card" *ngFor="let list of data.list; let i = index">-->
+<!--        <div class="date-time">{{data.list[i].dt_txt}}</div>-->
+<!--        <div class="col-container">-->
+<!--          <div class="col-left">-->
+<!--            <div class="temp">{{data.list[i].main.temp}}<sup>o</sup>C</div>-->
+<!--            <div class="desc">{{data.list[i].weather[0].description}}</div>-->
+<!--          </div>-->
+<!--          <div class="col-righ">-->
+<!--            <div class="icon" id="icon"><img src="https://openweathermap.org/img/wn/{{data.list[i].weather[0].icon}}@2x.png"/></div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<div class="search-form">
+        <input type="text" [(ngModel)]="cityCode" id="search" placeholder="cityCode"/>
+        <button type="button" (click)="changeCity();">chaneCity</button>
+</div>
+<section class="section" *ngIf="data">
+  <div class="container">
+    <div class="row" id="forecast">
+      <div class="col-3" *ngFor="let f of data.list;">
+        <div class="col-content">
+          <h3>{{f.dt_txt}}</h3>
+          <h2>{{f.main.temp}}<sup>o</sup>C</h2>
+          <p>{{f.weather[0].description}}</p>
+          <img src="http://openweathermap.org/img/wn/{{f.weather[0].icon}}@2x.png" alt="img"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

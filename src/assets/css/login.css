@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 18px;
+  line-height: 2.5;
+  font-family: 'Joan', serif;
+  background-color: lightskyblue;
+}
+img{
+  max-width: 100%;
+}
+.section-1{
+  float: left;
+  width: 100%;
+  background-color: lightskyblue;
+}
+.container-register{
+  border: 2px solid black;
+  width: 500px;
+  height: 600px;
+  margin: 0 auto ;
+  border-radius: 30px;
+  line-height: 3.5;
+  background-color:#ffffff;
+}
+.container-login{
+  width: 600px;
+  border: 2px solid black;
+  background-color:#ffffff;
+  margin: 0 auto ;
+}
+
+.col-12 h3 {
+  text-align: center;
+}
+.col-12 p{
+  text-align: center;
+}
+.col-12 p {
+  margin: 0 20px 0 0 ;
+}
+#title{
+  margin-top: -20px;
+}
+#log{
+  text-align: center;
+}
+#log1{
+  text-align: center;
+  border: 1px solid black;
+  margin: 30px;
+  background-color: blue;
+  border-radius: 30px;
+}
+#tent{
+  color: white;
+}
+#log{
+  border: 1px solid black;
+  width: 200px;
+  border-radius: 40px;
+  text-align: center;
+  margin: 20px auto;
+  background-color: #ffffff;
+}
+input{
+
+}
+#checkbox-name{
+  width: 15px;
+  margin-top: 30px;
+}
+#title{
+  float: left;
+}
+#tit1{
+
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+  background-color: blue;
+  color: white;
+}
+
+.btn-google {
+  color: white !important;
+  background-color: #ea4335;
+}
+
+.btn-facebook {
+  color: white !important;
+  background-color: #3b5998;
+}
+.container{
+  background-color: #ffffff;
+  box-sizing: border-box;
+
+}
+.col-sm-9{
+  border: 1px solid black;
+}
+.form-control{
+  height: 50px;
+  width: 100%;
+}
+
+.tot{
+  width: 100%;
+  margin-left: -50px;
+}
+.tot1{
+  width: 100%;
+  margin-left: -60px;
+}

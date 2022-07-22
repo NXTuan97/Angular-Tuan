@@ -1,2 +1,17 @@
 
-<app-classRoom *ngFor="let sa of classArray" [file]="sa"></app-classRoom>
+<header class="section-total">
+  <div class="container-total">
+    <ul class="nav">
+      <li class="nav-item"><a routerLink="/">Home</a> </li>
+      <li class="nav-item"><a routerLink="/about-us">About us</a></li>
+      <li class="nav-item"><a routerLink="/weather">Weather</a></li>
+      <li class="nav-item"><a routerLink="/login">Login</a></li>
+      <li class="nav-item"><a routerLink="/register">Register</a></li>
+    </ul>
+  </div>
+</header>
+<section class="section-all">
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</section>

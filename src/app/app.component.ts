@@ -11,6 +11,7 @@ export class AppComponent {
 
   classArray : IClassroom []=[
     {className:'T2204M', classStatus: true},
-    {className:'T2203M', classStatus: true}
+    {className:'T2203M', classStatus: false}
   ];
+
 }
