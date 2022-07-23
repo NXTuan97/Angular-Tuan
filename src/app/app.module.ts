@@ -12,14 +12,15 @@ import {RouterModule, Routes} from "@angular/router";
 import {AboutUsComponet} from "./aboutUs/aboutUs.componet";
 import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
+import {PageComponent} from "./assiTeam/page.component";
 //1 routing
 const appRoutes: Routes =[
   {path:'',component:AssignmentComponent},
   {path:'about-us', component:AboutUsComponet},
   {path:'login', component: LoginComponent},
   {path:'register', component: RegisterComponent},
-  {path:'weather', component: CurrentweatherComponent}
-
+  {path:'weather', component: CurrentweatherComponent},
+  {path:'page', component: PageComponent}
 ];
 
 @NgModule({
@@ -31,7 +32,8 @@ const appRoutes: Routes =[
     AssignmentComponent,
     AboutUsComponet,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PageComponent
   ],
   imports: [
     BrowserModule,FormsModule,

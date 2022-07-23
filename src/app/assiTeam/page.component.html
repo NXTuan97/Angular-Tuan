@@ -1,0 +1,42 @@
+<main class="main">
+  <h1>Team</h1>
+<div class="section">
+  <div class="container">
+    <div class="col-content">
+      <div class="row">
+        <div class="col-lg-3" id="sidebar" *ngIf="menu">
+          <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" id="mySidebar">
+            <h3>My Page</h3>
+              <div class="content"  *ngFor="let a of menu.data">
+<!--                <p>{{a.id}}</p>-->
+                <a href="#" class="w3-bar-item w3-button">{{a.name}}</a>
+                <img src="{{a.icon}}" style="max-width: 10%">
+              </div>
+          </div>
+          <script>
+            function w3_open() {
+              document.getElementById("mySidebar").style.display = "block";
+            }
+
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+          </script>
+        </div>
+        <div class="col-lg-9" id="navPage" *ngIf="data">
+          <h2> Drag-and-Drop Builder </h2>
+            <div class="col-content">
+              <div id="box" *ngFor="let f of data.data">
+                <div class="p1">
+                  <img src="{{f.image}}">
+                  <h5>{{f.name}}</h5>
+                  <p>{{f.price}}</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>

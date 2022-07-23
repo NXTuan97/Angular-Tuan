@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.25;
+  font-family: 'Joan', serif;
+  background-color: lightskyblue;
+}
+img{
+  max-width: 100%;
+}
+.section{
+  float: left;
+  width: 100%;
+}
+.container{
+  float: none;
+  width: 1200px;
+  margin: 0 auto;
+}
+#navPage{
+  box-sizing: border-box;
+  background-color: #ffffff;
+  height: 100%;
+}
+#mySidebar{
+  float: left;
+  width: 300px;
+}
+.p1{
+  margin-left: 20px;
+  width: 200px;
+  box-sizing: border-box;
+
+}
+h2{
+  margin:0 -200px 100px 300px;
+}
+h1{
+  text-align: center;
+}
+#box{
+  width: auto;
+
+}
+.col-content{
+  display: flex;
+  width: 1200px;
+  box-sizing: border-box;
+}
